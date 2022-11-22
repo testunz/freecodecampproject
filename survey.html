@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <title>Survery Emergency Department</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Emergency Department</h1>
+    <p id="description">This is a survey for health operators in ED</p>
+    <form name="survey-form" id="survey-form">
+      <fieldset class="firstfset">
+        <label for="name" id="name-label">
+          Insert your name
+          <input
+            type="text"
+            placeholder="Insert name"
+            id="name"
+            name="name"
+            required
+        /></label>
+        <label for="email" id="email-label">
+          Insert your E-mail
+          <input
+            type="email"
+            placeholder="Insert e-mail"
+            id="email"
+            name="email"
+            required
+        /></label>
+        <label for="number" id="number-label">
+          Insert your age<input
+            type="number"
+            id="number"
+            min="18"
+            max="120"
+            placeholder="Insert number"
+            required
+        /></label>
+      </fieldset>
+      <fieldset>
+        <label>
+          What is your role?
+          <select id="dropdown">
+            <option value="">Select one</option>
+            <option value="1">Medical Doctor</option>
+            <option value="2">Nurse</option>
+            <option value="3">OSS</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="attribute"
+          >What is your sex?<input
+            name="attribute"
+            type="radio"
+            id="attribute"
+            value="attribute"
+          />
+          Female</label
+        >
+        <label for="attribute"
+          ><input
+            name="attribute"
+            type="radio"
+            id="attribute"
+            value="attribute"
+          />
+          Male</label
+        >
+      </fieldset>
+      <fieldset>
+        <label for="checkbox"
+          ><input type="checkbox" name="checkbox" value="attribute" />
+          Working</label
+        >
+        <label for="checkbox"
+          ><input type="checkbox" name="checkbox" value="attribute" /> Not
+          working</label
+        >
+        <label for="textarea">
+          <textarea>Write your comment there</textarea>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" />
+    </form>
+  </body>
+</html>
